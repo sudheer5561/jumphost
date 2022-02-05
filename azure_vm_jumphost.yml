@@ -6,7 +6,7 @@
   - name: create resource groups
     azure_rm_resourcegroup:
       name: "{{ resourcegroup_name }}"
-      location: westeurope
+      location: France Central
       tags:
         testing: testing
 
