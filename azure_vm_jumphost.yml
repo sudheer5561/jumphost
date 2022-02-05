@@ -38,12 +38,6 @@
       name: jumphost
       vm_size: Standard_A2
       admin_username: ansible
-      ssh_password_enabled: false
-      ssh_public_keys: 
-      - path: /home/ansible/.ssh/authorized_keys
-        key_data: "{{ automata_ansible_sshkey }}"
-      - path: /home/ansible/.ssh/authorized_keys
-        key_data: "{{ automata_kvegh_sshkey }}"
       image:
         publisher: RedHat
         offer: rhel-byos
