@@ -4,8 +4,8 @@
   connection: local
 
   tasks: 
-  - name: calling shutdown
-    azure_rm_virtualmachine: 
-      name: Hostname
-      resource_group: "{{ resourcegroup_name }}"
-      started: no
+- name: Get facts for all virtual machines of a resource group
+  azure_rm_virtualmachine_info:
+  resource_group: "{{ resourcegroup_name }}"
+
+...
